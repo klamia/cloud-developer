@@ -13,7 +13,8 @@ import {filterImageFromURL, deleteLocalFiles,isValidURL, isImageURL } from './ut
   // Use the body parser middleware for post requests
   app.use(bodyParser.json());
 
-   // FilterImage endpoint 
+  // FilterImage endpoint 
+  /*********************************************************************************************************************** */
    app.get("/filteredimage", async ( req : express.Request, res : express.Response ) => {
     
     let url = req.query.image_url;
@@ -38,7 +39,7 @@ import {filterImageFromURL, deleteLocalFiles,isValidURL, isImageURL } from './ut
 
   /**************************************************************************** */
 
-  //! END @TODO1
+  
   
   // Root Endpoint
   // Displays a simple message to the user
